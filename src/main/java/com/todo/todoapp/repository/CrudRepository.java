@@ -8,7 +8,6 @@ import java.util.Optional;
 
 @NoRepositoryBean
 public interface CrudRepository<T, ID> extends Repository<T, ID> {
-
     <S extends T> S save(S entity);
 
     <S extends T> Iterable<S> saveAll(Iterable<S> entities);
